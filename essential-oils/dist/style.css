@@ -1,0 +1,189 @@
+main{
+  width: 85%;
+  max-width:1000px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+nav{
+  border-bottom: 1px solid black;
+}
+
+input, select, textarea{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  min-height: 30px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#header{
+  padding-bottom: 20px;
+}
+
+#logo{
+  width: 200px;
+}
+
+#title{
+  font-size: 45px;
+  font-family: 'Yantramanav', sans-serif;
+  color: #6E4A9E;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+#description{
+  display: flex;
+  justify-content: center;
+  color: #808080;
+  font-family: 'Itim', cursive;
+  font-size: 24px;
+}
+
+#member-button{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: #ffb3ec;
+  border: 5px solid #ffb3ec;
+  border-radius: 10px;
+  width: 100px;
+  transition: all .2s ease-in;
+}
+
+#member-button:hover{
+  background-color: #ff0066;
+  border: 5px solid #ff0066;
+}
+
+#member-button a{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+#member-button a:hover{
+  color: white;
+}
+
+#survey-form{
+  display: grid;
+  grid-template-areas:
+    "Donation Donation"
+    "Name Email"
+    "Payment Radios"
+    "Message Message"
+    "Checkbox Checkbox"
+    "Submit Submit";
+  grid-gap: 10px 10px;
+  font-size: 25px;
+}
+
+@media(max-width: 800px){
+  #survey-form{
+    grid-template-areas:
+      "Donation Donation"
+      "Name Name"
+      "Email Email"
+      "Payment Payment"
+      "Radios Radios"
+      "Message Message"
+      "Checkbox Checkbox"
+      "Submit Submit";
+  }
+
+}
+
+#donation-area{
+  grid-area: Donation;
+  display: flex;
+  flex-direction: column;
+}
+
+#number{
+  height: 1em !important;
+  font-size: 50px;
+  text-align: center; 
+  color: #808080;
+}
+
+::placeholder{
+  color: #d9d9d9;
+}
+
+#name-area{
+  grid-area: Name;
+  display: grid;
+  grid-gap: 0px 10px;
+}
+
+#email-area{
+  grid-area: Email;
+  display: grid;
+  grid-gap: 0px 10px;
+}
+
+#payment-area{
+  grid-area: Payment;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+#dropdown{
+  height: 50px;
+}
+
+#radio-area{
+  grid-area: Radios;
+  align-self: end;
+}
+#radio-area p{
+  margin: 0px;
+}
+#radio-area label{
+  font-size: 18px;
+}
+
+#checkbox-area{
+  grid-area: Checkbox;
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-area label{
+  font-size: 18px;
+}
+
+#message-area{
+  grid-area: Message;
+  display: flex;
+  flex-direction: column;
+}
+#comments{
+  min-width: 100%;
+  height: 250px;
+  resize: none;
+}
+
+#submit{
+  grid-area: Submit;
+  background-color: #6E4A9E;
+  border: 0px;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 25px;
+  color: white;
+}
+
+#submit:hover{
+  background-color: #553979;
+}
+
+input[type="radio"], input[type="checkbox"]  {
+  margin-top: -1px;
+  vertical-align: middle;
+}

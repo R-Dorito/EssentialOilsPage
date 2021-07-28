@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Essential oils </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<body>
+  <nav>
+  <img id="logo" src="https://www.youngliving.com/shared/header/yl-logo-color.svg">
+  </nav>
+  
+  <main>
+    <div id="header">
+      <h1 id="title">
+        Moms for Essential Oils Charity Page
+      </h1>
+      <p id="description">
+        Want to buy essential oils at Wholeseller prices?
+      </p>
+      <div id="member-button">
+        <a href="https://www.doterra.com/US/en/search/selectAnEnrollmentKit" target="_blank">
+          JOIN NOW
+        </a>
+      </div>
+    </div>
+    
+    <form id="survey-form">
+      <div id="donation-area">
+        <label id="number-label" for="number"> Donation amount ($USD):</label>
+        <input id="number" type="number" name="number" min="0" max="5000" placeholder="Amount" required/>
+      </div>
+
+      <div id="name-area">
+          <label id="name-label" for="name"> Name </label>
+          <input id="name" type="text" name="name" placeholder="Name" required/>
+      </div>
+      
+      <div id="email-area">
+          <label id="email-label" for="email"> Email </label>
+          <input id="email" type="email" name="email" placeholder="Email" required/>
+      </div>
+
+        
+      <div id="payment-area">
+        <label id="dropdown-label" for="dropdown">Payment Type</label>
+        <select id="dropdown" name="dropdown">
+          <option value="paypal">Paypal</option>
+          <option value="masterCard">Master Card</option>
+          <option value="applePay">Apple Pay</option>
+        </select>
+      </div>
+
+      <div id="radio-area">
+        <p>Are you a member?</p>
+        <input  id="radio-member" type="radio" name="membership" value="member">
+        <label id="select-member">Member</label>
+
+        <input  id="radio-guest" type="radio" name="membership" value="guest" checked="checked">
+        <label id="select-guest">Guest</label>
+        
+      </div>
+
+      <div id="checkbox-area">
+        <label for="promotions">
+          <input id="promotions" type="checkbox" name="emailChecks" value="recieveEmail"> 
+          Recieve emails about promotions
+        </label>
+        <label for="privacy">
+          <input id="privacy" type="checkbox" name="privacyChecks" value="privacyChecks"> 
+          I have read all the terms and conditions
+        </label>
+      </div>
+
+      <div id="message-area">
+        <label for="text-area">Send a message of hope:</label>
+        <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Delivery instructions">
+        </textarea>
+      </div>
+
+      <button type="submit" id="submit" class="submit-button">
+        Confirm
+      </button>
+    </form>
+  </main>
+</body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
